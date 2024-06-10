@@ -1,0 +1,140 @@
+body {
+  background-color: rgba(0, 0, 0, 0.873);
+}
+.to-do-list {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+button {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.5s ease;
+}
+
+.add-button {
+  background-color: green;
+}
+
+.add-button:hover {
+  background-color: rgb(3, 86, 3);
+  transform: scale(1.1);
+}
+
+.delete-button {
+  background-color: red;
+}
+
+.delete-button:hover {
+  background-color: rgb(177, 1, 1);
+  scale: 1.1;
+}
+
+.move-button {
+  background-color: mediumblue;
+}
+
+.move-button:hover {
+  background-color: darkblue;
+  scale: 1.1;
+}
+
+input[type="text"] {
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.532);
+  margin: 5px;
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: white;
+  margin-bottom: 10px;
+  border: 3px solid rgba(255, 255, 255, 0.135);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  flex: 1;
+}
+
+.delete-button,
+.move-button {
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
+@media (max-width: 500px) {
+  .delete-button,
+  .move-button {
+    padding: 8px 8px;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+
+  li{
+    padding: 10px;
+  }
+}
+
+@media (max-width: 590px) {
+  .text {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 455px) {
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  li {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 625px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.135);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  input[type="text"] {
+    font-size: 1.6rem;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.532);
+    margin: 5px;
+  }
+}
